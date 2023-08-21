@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{42E3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MhwWebsite", "Website\MhwWebsite\MhwWebsite.csproj", "{FE02C3C5-B40B-482D-A60B-3CCE85C28DFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhouyiStoreGenerator", "Website\ZhouyiStoreGenerator\ZhouyiStoreGenerator.csproj", "{7E6F3E08-F601-432E-9C48-A4178F084FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZhouyiStoreGenerator", "Website\ZhouyiStoreGenerator\ZhouyiStoreGenerator.csproj", "{7E6F3E08-F601-432E-9C48-A4178F084FA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
