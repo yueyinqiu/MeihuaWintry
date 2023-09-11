@@ -101,10 +101,10 @@ public partial class CaseCreatePage
         var interpreter = new Interpreter();
         _ = interpreter.SetDefaultNumberType(DefaultNumberType.Decimal);
 
-        _ = interpreter.SetVariable("年", (decimal)(int)lunar.Nian.Dizhi);
+        _ = interpreter.SetVariable("年", (decimal)lunar.Nian.Dizhi.Index);
         _ = interpreter.SetVariable("月", (decimal)lunar.Yue);
         _ = interpreter.SetVariable("日", (decimal)lunar.Ri);
-        _ = interpreter.SetVariable("时", (decimal)(int)lunar.Shi);
+        _ = interpreter.SetVariable("时", (decimal)lunar.Shi.Index);
 
         int upper, lower, line;
         try
