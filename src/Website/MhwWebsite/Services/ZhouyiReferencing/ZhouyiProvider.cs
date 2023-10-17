@@ -15,8 +15,8 @@ public sealed class ZhouyiProvider
             {
                 BaseAddress = new(baseAddress)
             };
-            var location = await client.GetStringAsync("zhouyi-location.json");
-            var result = await client.GetFromJsonAsync(location,
+            var result = await client.GetFromJsonAsync(
+                "zhouyi.json",
                 ZhouyiStoreContext.Default.ZhouyiStore);
             return new PreloadedZhouyiStore(result ?? new(null));
         }, true);

@@ -31,6 +31,8 @@ store.UpdateStore(new Zagua());
 store.UpdateStore(new Xici());
 
 Directory.CreateDirectory("./out");
-var storeName = $"zhouyi-{DateTime.Now:yyyy-MM-dd}.json";
-await File.WriteAllTextAsync( $"./out/{storeName}", store.SerializeToJsonString());
-await File.WriteAllTextAsync($"./out/zhouyi-location.json", storeName);
+await File.WriteAllTextAsync($"./out/zhouyi.json",
+    store.SerializeToJsonString(new JsonSerializerOptions()
+    {
+        WriteIndented = true
+    }));
