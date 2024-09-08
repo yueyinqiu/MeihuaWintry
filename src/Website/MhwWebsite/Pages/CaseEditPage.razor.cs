@@ -97,6 +97,6 @@ public partial class CaseEditPage
                 WriteIndented = true,
                 Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
             }).StoredCase);
-        await this.Downloader.DownloadFromStream(stream.ToArray(), $"{this.editingCase.Name}.mwb");
+        await this.Downloader.DownloadFromStream(stream.ToArray(), $"{this.editingCase.Name}.json");
     }
 }
